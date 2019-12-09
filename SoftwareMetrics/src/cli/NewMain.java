@@ -23,6 +23,7 @@ public class NewMain {
 		
 		else if(args[0].equals("-h") || args[0].equals("--help") || args[0].equals("-help")  ) {
 			System.out.print("Usage:\n\tTo start GUI: HalsteadTool\n\tTo use in CLI mode: HalsteadTool <path name>\n");
+			System.out.print("\tIn CLI mode the results will be printed to stdout in Json format.");
 			System.exit(1);
 		}
 		else {
