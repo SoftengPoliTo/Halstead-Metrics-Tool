@@ -36,6 +36,7 @@ public class Tokenizer {
 			cparser.compilationUnit();
 			token = cparser.getTokenStream();
 			break;
+		case "cc":
 		case "cpp":
 			CPP14Lexer cpplexer = new CPP14Lexer(stream);
 			CommonTokenStream cpptokenStream = new CommonTokenStream(cpplexer);

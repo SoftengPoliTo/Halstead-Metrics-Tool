@@ -23,7 +23,7 @@ public class NewMain {
 		
 		else if(args[0].equals("-h") || args[0].equals("--help") || args[0].equals("-help")  ) {
 			System.out.print("Usage:\n\tTo start GUI: HalsteadTool\n\tTo use in CLI mode: HalsteadTool <path name>\n");
-			System.out.print("\tIn CLI mode the results will be printed to stdout in Json format.");
+			System.out.print("\tIn CLI mode the results will be printed to stdout in Json format.\n");
 			System.exit(1);
 		}
 		else {
@@ -33,8 +33,10 @@ public class NewMain {
 				System.exit(2);
 			}
 			
-			if (file != null && (file.getName().toLowerCase().contains(".java")
-					|| file.getName().toLowerCase().contains(".c") || file.getName().toLowerCase().contains(".cpp"))) {
+			if (file != null && (file.getName().toLowerCase().endsWith(".java")
+					|| file.getName().toLowerCase().endsWith(".c")
+					|| file.getName().toLowerCase().endsWith(".cc")
+					|| file.getName().toLowerCase().endsWith(".cpp") )) {
 				try {
 					
 					MetricsEvaluator me = new Initiator().initiate(file.getPath());
