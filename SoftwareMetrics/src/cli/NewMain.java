@@ -93,7 +93,7 @@ public class NewMain {
 					System.out.print("Output written in file: output_halstead_tool__"+ file.getName() + ".json\n");
 */					
 					//WRITE to stdout
-					System.out.print(j.toJSONString());
+					System.out.println(j.toJSONString());
 					
 				} catch (Exception e) {
 					System.err.print("MetricsEvaluator exception.\n");
