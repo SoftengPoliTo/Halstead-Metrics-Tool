@@ -83,15 +83,19 @@ public class NewMain {
 					j.put("Halstead", h_json);
 					j.put("Filename", file.getName() );
 					
-					//WRITE to file
+/*					//WRITE to file
 					BufferedWriter writer = new BufferedWriter(new FileWriter( "output_halstead_tool__"+ file.getName() + ".json" ));
 					writer.write(j.toJSONString());
 					writer.close();
 					System.out.print("Output written in file: output_halstead_tool__"+ file.getName() + ".json\n");
+*/					
+					//WRITE to stdout
+					System.out.print(j.toJSONString());
 					
 				} catch (Exception e) {
 					System.err.print("MetricsEvaluator exception.\n");
 					e.printStackTrace();
+					System.exit(4);
 				}
 				
 			}
