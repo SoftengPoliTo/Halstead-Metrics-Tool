@@ -84,7 +84,7 @@ public class NewMain {
 					h_json.put("_Operators", oprtrs );
 					
 					j.put("Halstead", h_json);
-					j.put("Filename", file.getAbsolutePath() );
+					j.put("filename", file.getPath()); // .getAbsolutePath()
 					
 /*					//WRITE to file
 					BufferedWriter writer = new BufferedWriter(new FileWriter( "output_halstead_tool__"+ file.getName() + ".json" ));
