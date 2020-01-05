@@ -63,10 +63,10 @@ public class NewMain {
 					h_json.put("Length", RoundTo2Decimals(me.PROGRAM_LENGTH));
 					h_json.put("Estimated program length", RoundTo2Decimals(me.ESTIMATED_LENGTH));
 					h_json.put("Volume", RoundTo2Decimals(me.VOLUME));
-					h_json.put("Difficlty", RoundTo2Decimals(me.DIFFICULTY));
+					h_json.put("Difficulty", RoundTo2Decimals(me.DIFFICULTY));
 					h_json.put("Effort", RoundTo2Decimals(me.PROGRAM_EFFORT));
 					
-					h_json.put("Programming time", me.PROGRAMMING_TIME);
+					h_json.put("Programming time", RoundTo2Decimals(me.PROGRAMMING_TIME));
 					h_json.put("Purity ratio", RoundTo2Decimals(me.PURITY_RATIO) );
 					
 					
