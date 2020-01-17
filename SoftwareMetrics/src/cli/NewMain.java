@@ -36,6 +36,7 @@ public class NewMain {
 			if (file != null && (file.getName().toLowerCase().endsWith(".java")
 					|| file.getName().toLowerCase().endsWith(".c")
 					|| file.getName().toLowerCase().endsWith(".cc")
+					|| file.getName().toLowerCase().endsWith(".c++")
 					|| file.getName().toLowerCase().endsWith(".cpp") )) {
 				try {
 					

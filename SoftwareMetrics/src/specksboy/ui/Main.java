@@ -366,7 +366,9 @@ public class Main extends JFrame {
 
 	public void setMetricsValue(File file) {
 		if (file != null && (file.getName().toLowerCase().contains(".java")
-				|| file.getName().toLowerCase().contains(".c") 
+				|| file.getName().toLowerCase().contains(".c")
+				|| file.getName().toLowerCase().endsWith(".cc")
+				|| file.getName().toLowerCase().endsWith(".c++")
 				|| file.getName().toLowerCase().contains(".cpp"))) {
 			try {
 				MetricsEvaluator me = new Initiator().initiate(file.getPath());
