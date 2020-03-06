@@ -4,13 +4,13 @@ public class MetricsEvaluator {
 	public double PROGRAM_LENGTH,PROGRAM_VOCABULARY,ESTIMATED_LENGTH,PURITY_RATIO,VOLUME,DIFFICULTY,PROGRAM_EFFORT,PROGRAMMING_TIME;
 	public double n1,n2,N1,N2;
 	public void evaluate(){
-		this.N1=Operators.getInstance().name.size();
-		this.N2=Operands.getInstance().name.size();
+		this.n1=Operators.getInstance().name.size();
+		this.n2=Operands.getInstance().name.size();
 		for(int i=0;i<Operators.getInstance().name.size();i++){
-			this.n1+=Integer.parseInt(Operators.getInstance().count.get(i).toString());
+			this.N1+=Integer.parseInt(Operators.getInstance().count.get(i).toString());
 		}
 		for(int i=0;i<Operands.getInstance().name.size();i++){
-			this.n2+=Integer.parseInt(Operands.getInstance().count.get(i).toString());
+			this.N2+=Integer.parseInt(Operands.getInstance().count.get(i).toString());
 		}
 		this.PROGRAM_LENGTH=this.N1+this.N2;
 		this.PROGRAM_VOCABULARY=this.n1+this.n2;
